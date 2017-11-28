@@ -17,8 +17,8 @@ ENV VAULT_VERSION    0.8.3
 ENV RUN_TESTS        false
 
 # build artifacts for kubectl
-export K8S_BASEURL=https://storage.googleapis.com/kubernetes-release/release
-export K8S_VER=v1.8.4
+ENV K8S_BASEURL=https://storage.googleapis.com/kubernetes-release/release
+ENV K8S_VER=v1.8.4
 
 # This is the release of https://github.com/hashicorp/docker-base to pull in order
 # to provide HashiCorp-built versions of basic utilities like dumb-init and gosu.
